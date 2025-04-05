@@ -1,13 +1,16 @@
+
 package com.example.todo.controller;
 
 import com.example.todo.model.Task;
 import com.example.todo.service.TaskService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
+@CrossOrigin
 public class TaskController {
 
     private final TaskService service;
@@ -17,17 +20,18 @@ public class TaskController {
     }
 
     @GetMapping
-    public List<Task> getTasks() {
-        return service.getAll();
+    public ResponseEntity<List<Task>> getTasks() {
+        return ResponseEntity.ok(service.getAll());
     }
 
     @PostMapping
-    public Task createTask(@RequestBody Task task) {
-        return service.save(task);
+    public ResponseEntity<Task> createTask(@RequestBody Task task) {
+        return ResponseEntity.ok(service.save(task));
     }
 
     @DeleteMapping("/{id}")
-    public void deleteTask(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteTask(@PathVariable Long id) {
         service.delete(id);
+        return ResponseEntity.ok().build();
     }
 }
