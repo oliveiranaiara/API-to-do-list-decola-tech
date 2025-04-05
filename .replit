@@ -177,3 +177,15 @@ start = "vscode-css-language-server --stdio"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 6566202
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./mvnw spring-boot:run"
