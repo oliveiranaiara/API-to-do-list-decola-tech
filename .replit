@@ -189,6 +189,3 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "./mvnw spring-boot:run"
-
-[deployment]
-deploymentTarget = "cloudrun"
