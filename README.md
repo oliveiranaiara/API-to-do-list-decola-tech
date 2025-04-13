@@ -1,6 +1,6 @@
 # ✅ API To-Do List - Decola Tech
 
-API RESTful de gerenciamento de tarefas (to-do list), desenvolvida com **Spring Boot 3**, **Java 17** e **PostgreSQL**, implantada na nuvem usando o **Railway**. O projeto permite criar, listar, atualizar e deletar tarefas.
+API RESTful de gerenciamento de tarefas (to-do list), desenvolvida com **Spring Boot 3**, **Java 17** e **PostgreSQL**, implantada na nuvem usando o **Railway**. O projeto permite criar, listar, e deletar tarefas.
 
 ---
 🛠️ Nota: Optei por desenvolver o projeto no Replit devido a limitações na minha máquina local, que não estava conseguindo rodar projetos Java/Spring corretamente no momento. O Replit foi uma ótima alternativa para manter a produtividade e garantir a entrega do desafio.
@@ -17,9 +17,6 @@ API RESTful de gerenciamento de tarefas (to-do list), desenvolvida com **Spring 
 
 - [x] Criar tarefa
 - [x] Listar todas as tarefas
-- [x] Atualizar tarefa por ID
-- [x] Excluir tarefa por ID
-- [x] Marcar tarefa como concluída
 - [x] Integração com banco de dados PostgreSQL
 - [x] Testes via Postman
 
